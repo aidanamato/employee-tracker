@@ -34,4 +34,38 @@ router.post('/department', ({body}, res) => {
   });
 });
 
+// role routes
+router.get('/roles', (req, res) => {
+  const sql = 'SELECT * FROM roles';
+
+  db.query(sql, (err, rows) => {
+    if (err) {
+      res.status(400).json({error: err.message});
+      return;
+    }
+    res.json({
+      message: 'success',
+      data: rows
+    });
+  });
+});
+
+router.post('/role', ({body}, res) => {
+
+  const sql = `INSERT INTO roles (title, salary, department_id) 
+               VALUES (?, ?, ?)`;
+  const param = [body.title, body.salary, body.departmentID];
+
+  db.query(sql, param, (err, result) => {
+    if (err) {
+      res.status(400).json({error: err.message});
+      return;
+    }
+    res.json({
+      message: 'success',
+      result: body
+    });
+  });
+});
+
 module.exports = router;
