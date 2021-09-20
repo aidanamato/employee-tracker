@@ -124,4 +124,21 @@ router.post('/employee', ({body}, res) => {
   });
 });
 
+router.put('/employee', ({body}, res) => {
+  const sql = `UPDATE employees SET role_id = ?
+               WHERE id = ?`;
+  const params = [body.role, body.employee];
+
+  db.query(sql, params, (err, result) => {
+    if (err) {
+      res.status(500).json({error: err.message});
+      return;
+    }
+    res.json({
+      message: 'success',
+      data: body
+    });
+  });
+});
+
 module.exports = router;

@@ -22,6 +22,6 @@ last_name VARCHAR(30) NOT NULL,
 role_id INTEGER NOT NULL,
 is_manager BOOLEAN NOT NULL,
 manager_id INTEGER,
-CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES departments(id),
+CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES roles(id),
 CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employees(id)
 );
