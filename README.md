@@ -17,7 +17,7 @@ Welcome to my Employee Tracker node.js application! Use this application to popu
 
 ## Instillation
 
-This application requires node.js. If you do not have node.js installed, you can download it [here](https://nodejs.org/en/). To begin the instillation process, first clone this repository into your desired local directory. Next, navigate into the cloned repository and run the command `npm install` to install the required dependencies for the application. The application is now fully installed and ready for use.
+This application requires node.js. If you do not have node.js installed, you can download it [here](https://nodejs.org/en/). It also requires the MySQL database management system. Instillation instructions for Windows and Mac operating systems can be found [here](https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide). To begin the instillation process once node.js and MySQL are installed, first clone this repository into your desired local directory. Next, navigate into the cloned repository and run the command `npm install` to install the required dependencies for the application. The application is now fully installed and ready for use.
 
 ## Usage
 
