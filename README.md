@@ -21,7 +21,9 @@ This application requires node.js. If you do not have node.js installed, you can
 
 ## Usage
 
-Simply enter the command `npm start` after in the directory which this repository was cloned and follow the command line prompts to view, add, and update employee information.
+To prepare this application for use you will first need to run the db.sql and schema.sql files in the mySQL CLI. After logging in using your password with the command `mysql -u root -p`, run `source db/db.sql` and then `source db/schema.sql` to configure the database. Lastly, open the `connection.js` file ind the `db` folder and input your password in the corresponding field.
+
+Now, simply enter the command `npm start` and follow the command line prompts to view, add, and update employee information.
 
 [Walkthrough Video](https://drive.google.com/file/d/1XqzJR8bDl5ZDiLbBKhDfBsokCplDk_CN/view)
 
