@@ -25,7 +25,8 @@ To prepare this application for use you will first need to run the db.sql and sc
 
 Now, simply enter the command `npm start` and follow the command line prompts to view, add, and update employee information.
 
-[Walkthrough Video](https://drive.google.com/file/d/1XqzJR8bDl5ZDiLbBKhDfBsokCplDk_CN/view)
+[Walkthrough Video Part 1](https://watch.screencastify.com/v/MwdqVsAndB9EloZf2FxD)
+[Walkthrough Video Part 2](https://watch.screencastify.com/v/p8qczZ1URkQIK4VTttyN)
 
 ## License
 
